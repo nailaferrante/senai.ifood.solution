@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  <ProjectReference Include="..\senai.ifood.domain\ifood.domain.csproj"/>
+  <ProjectReference Include="..\senai.ifood.domain\senai.ifood.domain.csproj"/>
   </ItemGroup>
 </Project>

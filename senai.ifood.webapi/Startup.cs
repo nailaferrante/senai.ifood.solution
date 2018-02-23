@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Microsoft.EntityFramework;
+using Microsoft.EntityFrameworkCore;
+using senai.ifood.repository.Context;
 
 namespace senai.ifood.webapi
 {

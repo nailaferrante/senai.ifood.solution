@@ -1,10 +1,11 @@
+using senai.ifood.domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace senai.ifood.repository.Context
 {
     public class IFoodContext : DbContext
     {
-        public IFoodContext(DBContextOptions<IFoodContext> options)
+        public IFoodContext(DbContextOptions<IFoodContext> options)
         : base (options)
         {
 
@@ -26,7 +27,7 @@ namespace senai.ifood.repository.Context
             modelBuilder.Entity<UsuarioDomain>().ToTable("Usuarios");
             modelBuilder.Entity<UsuarioPermissaoDomain>().ToTable("UsuariosPermissoes");
 
-            base OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder);
 
         }
     }
